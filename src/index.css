@@ -37,7 +37,11 @@ nav .nav-button {
     border-radius: 10px;
     border: none;
     margin: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
+}
+nav .nav-button:disabled {
+    background-color: rgb(189, 180, 180);
+    color: rgb(193,38,75);
 }
 nav .logo-container {
     width: 170px;
@@ -70,4 +74,7 @@ nav .logo-container .logo {
     background-color: rgb(255,255,255);
     border-radius: 10px;
     padding: 40px;
+}
+.auth-modal .close-icon {
+    float: right;
 }

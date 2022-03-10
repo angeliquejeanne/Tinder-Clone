@@ -10,10 +10,9 @@ html, body {
 h2 {
     font-style: italic;
 }
-body {
+/* body {
     background-color: grey;
-    
-}
+} */
 .primary-title {
     font-size: 5.625rem;
     color: rgb(255,255,255);
@@ -125,6 +124,10 @@ nav .logo-container .logo {
 
 
 /* OnBoarding Page */
+.onboarding {
+    border-top: 1px solid rgb(154,154,154);
+}
+
 .onboarding form {
     display: flex;
     justify-content: center;
@@ -135,6 +138,7 @@ nav .logo-container .logo {
     flex-direction: column;
     padding: 20px;
     width: 35%;
+    text-align: start;
 }
 
 .onboarding form input {
@@ -173,6 +177,23 @@ nav .logo-container .logo {
 .onboarding form input[type="radio"] {
     display: none;
 }
+.onboarding form input[type="number"] {
+    width: 30%;
+}
+
 .onboarding form input[type="radio"]:ckecked + label {
     border: 2px solid rgb(221,39,22);
+    background-color: aqua;
+}
+.onboarding form input[type="radio"]:hover {
+    border: 2px solid rgb(221,39,22);
+}
+.onboarding form input[type="submit"]:hover {
+    background-color: rgb(235,235,235);
+}
+.onboarding form input[type="submit"]:active {
+    background-color: rgb(226,115,155);
+}
+.onboarding form .photo-container img{
+    width: 100%;
 }

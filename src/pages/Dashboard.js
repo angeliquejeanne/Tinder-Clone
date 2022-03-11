@@ -40,7 +40,7 @@ const Dashboard = () => {
     return (
         <div className="dashboard">
             <ChatContainer />
-            <div className="swiper-container">
+            <div className="swipe-container">
                 <div className="card-container">
                     {characters.map((character) =>
                         <TinderCard 

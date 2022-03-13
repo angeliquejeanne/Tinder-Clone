@@ -35,13 +35,14 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
             }
           );
     
-          setCookie("AuthToken", response.data.token)
-          setCookie("UserId", response.data.userId)
+          setCookie('Email', response.data.email)
+          setCookie('UserId', response.data.userId)
+          setCookie('AuthToken', response.data.token)
     
           const success = response.status === 201;
     
-          if (success && isSignUp) navigate("/onboarding")
-          if (success && !isSignUp) navigate("/dashboard")
+          if (success && isSignUp) navigate('/onboarding')
+          if (success && !isSignUp) navigate('/dashboard')
     
           window.location.reload()
         } catch (err) {

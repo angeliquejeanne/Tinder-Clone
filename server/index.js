@@ -5,6 +5,7 @@ const { MongoClient } = require('mongodb')
 const { v4: uuidv4 } = require('uuid')
 const jwt = require('jsonwebtoken')
 const cors = require('cors')
+const bcrypt = require('bcrypt')
 
 const uri = 'mongodb+srv://jeanne:4f3kKNSNl7Bs2u0r@cluster0.ppzl3.mongodb.net/Cluster0?retryWrites=true&w=majority'
 
